@@ -1,5 +1,5 @@
 # A JavaFX Toy Social Network Application
-   <b>Technology stack: JavaFX, FXML, CSS, PostgreSQL</b>
+   <b>Technology stack: JavaFX, FXML, CSS, Java, PostgreSQL</b>
 
 
 <h2>Features:</h2>
