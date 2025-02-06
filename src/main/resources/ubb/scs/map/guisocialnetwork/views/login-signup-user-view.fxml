@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane styleClass="mainGrid" stylesheets="@../css/login.css" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.guisocialnetwork.controller.LogInController">
+    <children>
+        <Label styleClass="labelAuthMain" fx:id="labelWelcome" prefHeight="70.0" prefWidth="600.0"/>
+        <GridPane hgap="2.0" layoutX="50.0" prefHeight="207.0" prefWidth="400.0" vgap="5.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="15.0">
+            <columnConstraints>
+                <ColumnConstraints maxWidth="250.5" minWidth="10.0" prefWidth="100.5"/>
+                <ColumnConstraints maxWidth="250.5" minWidth="10.0" prefWidth="100.5"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Label styleClass="labelLogin" fx:id="labelFirstName" prefHeight="35.0" prefWidth="200.0" text="First Name:" GridPane.columnIndex="1" GridPane.rowIndex="1" textAlignment="RIGHT"/>
+                <Label styleClass="labelLogin" fx:id="labelLastName" prefHeight="35.0" prefWidth="200.0" text="Last Name:" GridPane.columnIndex="1" GridPane.rowIndex="2" textAlignment="RIGHT"/>
+                <Label styleClass="labelLogin" prefHeight="35.0" prefWidth="200.0" text="Email:" GridPane.columnIndex="1" GridPane.rowIndex="3" textAlignment="RIGHT"/>
+                <Label styleClass="labelLogin" prefHeight="35.0" prefWidth="200.0" text="Password:" GridPane.columnIndex="1" GridPane.rowIndex="4" textAlignment="RIGHT"/>
+                <Label styleClass="labelLogin" fx:id="labelConfirmation" prefHeight="35.0" prefWidth="200.0" text="Confirmation:" GridPane.columnIndex="1" GridPane.rowIndex="5" textAlignment="RIGHT"/>
+
+                <TextField styleClass="textBox" fx:id="textFieldFirstName" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <TextField styleClass="textBox" fx:id="textFieldLastName" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <TextField styleClass="textBox" fx:id="textFieldEmail" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <PasswordField styleClass="textBox" fx:id="textFieldPassword" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <PasswordField styleClass="textBox" fx:id="textFieldConfirmPassword" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            </children>
+            <opaqueInsets>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </opaqueInsets>
+        </GridPane>
+        <ButtonBar layoutX="150.0" layoutY="262.0" prefHeight="40.0" prefWidth="340.0" AnchorPane.bottomAnchor="20.0">
+            <buttons>
+                <Button fx:id="buttonLogin" mnemonicParsing="false" onAction="#handleLogin" text="Log In" prefWidth="100">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="buttonSignUp" mnemonicParsing="false" onAction="#handleSignUp" text="Sign Me Up!" prefWidth="100">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </Button>
+            </buttons>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </ButtonBar>
+    </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane styleClass="mainGrid" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ubb.scs.map.guisocialnetwork.controller.ChatController" prefHeight="500.0" prefWidth="340.0">
+    <children>
+        <VBox prefHeight="500.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" alignment="CENTER" spacing="10">
+            <children>
+                <HBox prefHeight="30.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" alignment="CENTER" spacing="10">
+                        <children>
+                            <Button prefHeight="30" prefWidth="50" onAction="#handleBack" text="Back"/>
+                            <TextField fx:id="textFieldSearchChat" prefWidth="250" prefHeight="30" onKeyTyped="#handleTextFieldSearch"/>
+                        </children>
+                </HBox>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="320.0">
+                    <children>
+                        <TableView fx:id="tableView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn styleClass="rowCellChatLeft" fx:id="tableColumnOtherUser" prefWidth="160.0" />
+                                <TableColumn styleClass="rowCellChatRight" fx:id="tableColumnLoggedUser" prefWidth="160.0" text="Your Messages" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <HBox prefHeight="30.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" alignment="CENTER" spacing="10">
+                    <children>
+                        <TextField fx:id="textFieldNewMessage" prefWidth="210" prefHeight="30"/>
+                        <Button prefHeight="30" prefWidth="90" onAction="#handleSend" text="Send"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets left="5.0" top="5.0" right="5.0" bottom="5.0"/>
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

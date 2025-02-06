@@ -1,0 +1,56 @@
+/*Culori:
+    #150016-negru,
+    #29104A-mov_inchis,
+    #522C5D-mov_deschis,
+    #845162-maro,
+    #E3B6B1-crem_inchis,
+    #FFE3D8-crem_deschis
+*/
+.button {
+    -fx-text-fill: #cfcfcf;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#E3B6B1, #845162, #522C5D, #29104A);
+    -fx-effect: dropshadow( three-pass-box , #150016 , 5, 0.0 , 0 , 1 );
+}
+
+.labelAuthMain {
+    -fx-font-size: 20;
+    -fx-font-family: "Times New Roman";
+    -fx-alignment: center;
+    -fx-text-fill: #845162;
+    -fx-effect: dropshadow( gaussian , #E3B6B1, 0,0,0,1 );
+}
+
+.labelLogin {
+    -fx-font-size: 15;
+    -fx-font-family: "Times New Roman";
+    -fx-text-alignment: right;
+    -fx-text-fill: #845162;
+    -fx-effect: dropshadow( gaussian , #E3B6B1, 0,0,0,1 );
+}
+
+.textBox{
+    -fx-border-width: 3;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: #E3B6B1;
+    -fx-border-color: #845162;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 15;
+    -fx-prompt-text-fill: #522C5D;
+    -fx-effect: dropshadow( gaussian , #29104A, 0,0,3,3 );
+}
+
+.textBox:hover{
+    -fx-border-color: #522C5D;
+}
+
+.textBox:focused{
+    -fx-effect: dropshadow( gaussian , #29104A, 0,0,1,1 );
+    -fx-border-color: #522C5D;
+}
+
+.mainGrid {
+    -fx-background-color: #FFE3D8;
+}

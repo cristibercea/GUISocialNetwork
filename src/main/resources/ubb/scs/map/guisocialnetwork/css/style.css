@@ -1,0 +1,182 @@
+/*Culori:
+    #150016-negru,
+    #29104A-mov_inchis,
+    #522C5D-mov_deschis,
+    #845162-maro,
+    #E3B6B1-crem_inchis,
+    #FFE3D8-crem_deschis
+*/
+.table-view {
+    -fx-background-color: #29104A;
+    -fx-text-fill: #E3B6B1;
+    -fx-font-family: "Times New Roman";
+}
+
+.table-view .scroll-bar{
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #E3B6B1;
+    -fx-background-radius: 7px;
+}
+
+.table-view .scroll-bar .increment-arrow, .table-view .scroll-bar .decrement-arrow {
+    /*-fx-shape: "M0 0 L5 5 L0 10 Z";  Custom arrow shape */
+    -fx-background-color: #E3B6B1;
+}
+
+.button {
+    -fx-text-fill: #FFE3D8;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#E3B6B1, #845162, #522C5D, #29104A);
+    -fx-effect: dropshadow( three-pass-box , #150016 , 5, 0.0 , 0 , 1 );
+}
+
+.tableHeader{
+    -fx-font-size: 15;
+    -fx-text-alignment: center;
+    -fx-text-fill: #845162;
+    -fx-effect: dropshadow( gaussian , #E3B6B1, 0,0,0,1 );
+}
+
+.table-row-cell:selected {
+    -fx-background-color:#522C5D ;
+    -fx-text-fill: #FFE3D8;
+}
+
+.table-row-cell:odd:selected {
+    -fx-background-color:#522C5D ;
+    -fx-text-fill: #FFE3D8;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #E3B6B1;
+    -fx-text-fill: #150016;
+}
+
+.table-row-cell{
+    -fx-background-color: #FFE3D8;
+    -fx-text-fill: #150016;
+}
+
+.mainGrid {
+    -fx-background-color: #FFE3D8;
+}
+
+.text-field{
+    -fx-border-width: 3;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: #E3B6B1;
+    -fx-border-color: #845162;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 15;
+    -fx-prompt-text-fill: #522C5D;
+    -fx-effect: dropshadow( gaussian , #29104A, 0,0,3,3 );
+}
+
+.text-field:hover{
+    -fx-border-color: #522C5D;
+}
+
+.text-field:focused{
+    -fx-effect: dropshadow( gaussian , #29104A, 0,0,1,1 );
+    -fx-border-color: #522C5D;
+}
+
+.label{
+    -fx-font-size: 15;
+    -fx-font-family: "Times New Roman";
+    -fx-text-alignment: right;
+    -fx-text-fill: #845162;
+    -fx-effect: dropshadow( gaussian , #E3B6B1, 0,0,0,1 );
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #29104A;
+}
+
+.table-view .column-header {
+    -fx-background-color: #29104A;
+    -fx-text-fill: #E3B6B1;
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #E3B6B1;
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+}
+
+.split-pane-divider {
+    -fx-background-color: #29104A;
+}
+
+.split-pane-divider:hover {
+    -fx-background-color: #845162;
+    -fx-cursor: move;
+}
+
+.rowCellChatLeft{
+    -fx-font-size: 13;
+    -fx-text-alignment: right;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.rowCellChatRight{
+    -fx-font-size: 13;
+    -fx-text-alignment: right;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.rowCellChatSelect {
+    -fx-font-size: 20;
+}
+
+.combo-box{
+    -fx-text-fill: #FFE3D8;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#E3B6B1, #845162, #522C5D, #29104A);
+    -fx-effect: dropshadow( three-pass-box , #150016 , 5, 0.0 , 0 , 1 );
+}
+
+.combo-box-popup {
+    -fx-background-color: #FFE3D8;
+    -fx-border-color: #522C5D;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.combo-box-popup .scroll-bar{
+    -fx-background-color: #29104A;
+}
+
+.combo-box-popup .scroll-bar .thumb {
+    -fx-background-color: #E3B6B1;
+    -fx-background-radius: 7px;
+}
+
+.combo-box-popup .scroll-bar .increment-arrow, .combo-box-popup .scroll-bar .decrement-arrow {
+    /*-fx-shape: "M0 0 L5 5 L0 10 Z";  Custom arrow shape */
+    -fx-background-color: #E3B6B1;
+}
+
+.list-cell {
+    -fx-background-color: #FFE3D8;
+    -fx-text-fill: #29104A;
+    -fx-font-size: 14px;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #522C5D;
+    -fx-text-fill: #FFE3D8;
+}
+
+.list-cell:hover{
+    -fx-background-color: #845162;
+    -fx-text-fill: #FFE3D8;
+}
+
