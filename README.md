@@ -1,4 +1,4 @@
-# A JavaFX Toy Social Network Application
+# JavaFX Toy Social Network Application
    <b>Technology stack: JavaFX, FXML, CSS, Java, PostgreSQL</b>
 
 
